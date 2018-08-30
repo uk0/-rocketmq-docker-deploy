@@ -7,11 +7,11 @@
 
 ## 注意事项
     
-    ```bash
-    #Dockerfile内的 From 可以替换
-         openjdk8
-         jdk1.8
-    ```
+         ```bash
+          #Dockerfile内的 From 可以替换
+               openjdk8
+               jdk1.8
+         ```
 
 ## 个人博客 firsh.me
 
