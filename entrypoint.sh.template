@@ -1,0 +1,13 @@
+#!/bin/bash
+nohup sh /home/apache-rocketmq/bin/mqnamesrv > /dev/null 2>&1 &
+
+nohup sh /home/apache-rocketmq/bin/mqbroker -c /home/apache-rocketmq/broker.p1 &
+
+nohup java -jar rocketmq-console-ng-1.0.0.jar --server.port=CONSOLEPORT --rocketmq.config.namesrvAddr=HOSTIP:NAMESVCPORT &
+
+sleep 10
+
+
+tail -f /root/logs/rocketmqlogs/*.log
+
+

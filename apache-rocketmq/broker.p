@@ -1,0 +1,16 @@
+brokerRole=ASYNC_MASTER
+flushDiskType=ASYNC_FLUSH
+autoCreateTopicEnable=true
+autoCreateSubscriptionGroup=true
+diskMaxUsedSpaceRatio=75
+maxMessageSize=65536
+brokerClusterName=CLASTNAME
+brokerName=BKNAME
+namesrvAddr=HOSTIP:NAMESVCPORTS
+brokerIP1=HOSTIP
+listenPort=LPORT
+haListenPort=HAPORT
+rocketmqHome=/home/apache-rocketmq
+highSpeedMode=false
+storePathCommitLog=/root/store/commitlog
+fileReservedTime=72
