@@ -49,4 +49,5 @@ then
 	docker build -t registry.cn-hangzhou.aliyuncs.com/huaching_prod/rocketmq:4.3.0.${tag} .
 	# rocketmq namesvc   console  broker port
 	docker run -d -p ${namesvcPort}:9876 -p ${consolePort}:${consolePort} -p ${listenPort}:${listenPort}  -p ${haPort}:${haPort} -p ${vipPort}:${vipPort}  registry.cn-hangzhou.aliyuncs.com/huaching_prod/rocketmq:4.3.0.${tag}
+	echo -e "\033[31m Please Allowed to Pass on firewalld and Safe Group  \n \t ${namesvcPort} \n \t ${consolePort} \n \t ${listenPort} \n \t ${haPort} \n \t ${vipPort}  \033[0m"
 fi
