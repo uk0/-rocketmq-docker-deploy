@@ -5,6 +5,14 @@
     *  3.默认启动RocketMQ 4.3.0 以及 低版本的 RocketMQ Console 
     *  4.本脚本是业余时间做的验证，如果有人使用请在`issues` 告诉我我可以继续更新，以便支持集群部署。
 
+## 注意事项
+    
+    ```bash
+    #Dockerfile内的 From 可以替换
+         openjdk8
+         jdk1.8
+    ```
+
 ## 个人博客 firsh.me
 
 
